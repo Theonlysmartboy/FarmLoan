@@ -38,7 +38,7 @@ android:layout_width="match_parent"
 android:layout_height="wrap_content"
 android:id="@+id/primaryPhoneContainer">
     <EditText
-        android:id="@+id/primaryPhoneEditText"
+        android:id="@+id/primaryPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/primary_phone_number" />
@@ -52,7 +52,7 @@ android:id="@+id/primaryPhoneContainer">
         android:layout_height="wrap_content"
         android:id="@+id/secondaryPhoneContainer">
     <EditText
-        android:id="@+id/secondaryPhoneEditText"
+        android:id="@+id/secondaryPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Secondary Phone Number"/>
@@ -80,7 +80,7 @@ android:id="@+id/primaryPhoneContainer">
         android:layout_height="wrap_content"
         android:id="@+id/businessTypeContainer">
     <EditText
-        android:id="@+id/businessTypeEditText"
+        android:id="@+id/businessType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint=" Business Type"/>
@@ -94,7 +94,7 @@ android:id="@+id/primaryPhoneContainer">
         android:layout_height="wrap_content"
         android:id="@+id/locationContainer">
     <EditText
-        android:id="@+id/locationEditText"
+        android:id="@+id/location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Location"/>
