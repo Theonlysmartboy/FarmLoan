@@ -32,6 +32,7 @@ public class SplashActivity extends AppCompatActivity {
                 //Show the HomeActivity
                 Intent home = new Intent(SplashActivity.this, SignInActivity.class);
                 startActivity(home);
+                //overridePendingTransition(R.anim.activity_slide_in_right, R.anim.activity_slide_out_left);
                 finish();
             }
         },5000);
