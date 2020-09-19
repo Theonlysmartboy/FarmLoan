@@ -4,6 +4,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.NewAccountActivity">
-
+    tools:context=".ui.NewAccountActivity"
+    android:background="@color/colorGreen">
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_provide_your_info"
+        app:layout_constraintBottom_toTopOf="@+id/nameContainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@+id/introText"
+        app:layout_constraintBottom_toTopOf="@+id/primaryPhoneContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameContainer">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full name" />
+    </com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+app:layout_constraintTop_toBottomOf="@+id/nameContainer"
+app:layout_constraintBottom_toTopOf="@+id/secondaryPhoneContainer"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/primaryPhoneContainer">
+    <EditText
+        android:id="@+id/primaryPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/primary_phone_number" />
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@+id/primaryPhoneContainer"
+        app:layout_constraintBottom_toTopOf="@+id/idNoContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondaryPhoneContainer">
+    <EditText
+        android:id="@+id/secondaryPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Secondary Phone Number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@+id/secondaryPhoneContainer"
+        app:layout_constraintBottom_toTopOf="@+id/businessTypeContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idNoContainer">
+    <EditText
+        android:id="@+id/idNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id Number" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@+id/idNoContainer"
+        app:layout_constraintBottom_toTopOf="@+id/locationContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/businessTypeContainer">
+    <EditText
+        android:id="@+id/businessTypeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Business Type"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@+id/businessTypeContainer"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyRevenueContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationContainer">
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@+id/nameContainer"
+        app:layout_constraintBottom_toTopOf="@+id/saveAccountButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthlyRevenueContainer">
+    <EditText
+        android:id="@+id/monthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monthly Revenue" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/saveAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_details"
+        app:layout_constraintTop_toBottomOf="@id/monthlyRevenueContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="470dp"
+        android:drawableLeft="@drawable/ic_baseline_save"
+        android:drawablePadding="@dimen/margin_md"
+        android:background="@drawable/rounded_button"
+        android:drawableStart="@drawable/ic_baseline_save" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,16 +7,29 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowAnimationStyle">@style/MyCustomActivityAnimation</item>
     </style>
-    <style name="MyCustomActivityAnimation"
-        parent="@android:style/Animation.Activity">
+
+    <style name="MyCustomActivityAnimation" parent="@android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">
-            @anim/activity_slide_in_right</item>
+            @anim/activity_slide_in_right
+        </item>
         <item name="android:activityOpenExitAnimation">
-            @anim/activity_slide_out_left</item>
+            @anim/activity_slide_out_left
+        </item>
         <item name="android:activityCloseEnterAnimation">
-            @anim/activity_slide_in_left</item>
+            @anim/activity_slide_in_left
+        </item>
         <item name="android:activityCloseExitAnimation">
-            @anim/activity_slide_out_right</item>
+            @anim/activity_slide_out_right
+        </item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
