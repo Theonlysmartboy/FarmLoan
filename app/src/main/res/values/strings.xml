@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FarmLoan</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="imageview_place_holder">Imageview place holder</string>
+    <string name="text_view_place_holder">Text view place holder</string>
 </resources>
