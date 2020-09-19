@@ -5,4 +5,6 @@
     <string name="next">Next</string>
     <string name="imageview_place_holder">Imageview place holder</string>
     <string name="text_view_place_holder">Text view place holder</string>
+    <string name="otema_technologies">Otema Technologies</string>
+    <string name="powered_by_otema_technologies">Powered By otema Technologies</string>
 </resources>
