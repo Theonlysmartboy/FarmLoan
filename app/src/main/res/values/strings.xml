@@ -21,4 +21,14 @@
     <string name="save_details">Save Details</string>
     <string name="please_provide_your_info">Please provide your info..</string>
     <string name="primary_phone_number">Primary Phone Number</string>
+    <string name="harsh">#</string>
+    <string name="full_name">Full Name</string>
+    <string name="primary_phone_no">Primary Phone No</string>
+    <string name="secondary_phone_no">Secondary Phone No</string>
+    <string name="email">Email</string>
+    <string name="id_no">Id No</string>
+    <string name="business_type">Business Type</string>
+    <string name="location">Location</string>
+    <string name="monthly_revenue">Monthly Revenue</string>
+    <string name="status">Status</string>
 </resources>
