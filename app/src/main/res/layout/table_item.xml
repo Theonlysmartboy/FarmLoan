@@ -69,14 +69,14 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/status"
+        android:id="@+id/created"
         android:layout_weight="0.2"
         android:gravity="center"
         android:background="@drawable/table_border"/>
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/created"
+        android:id="@+id/status"
         android:layout_weight="0.2"
         android:gravity="center"
         android:background="@drawable/table_border"/>

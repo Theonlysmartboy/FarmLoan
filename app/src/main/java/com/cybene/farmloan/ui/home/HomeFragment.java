@@ -92,7 +92,7 @@ public class HomeFragment extends Fragment {
                                 btype.setText(jsonObject.getString("businesstype"));
                                 loc.setText(jsonObject.getString("location"));
                                 monthly.setText(jsonObject.getString("monthlyrevenue"));
-                                created.setText(jsonObject.getString("reg_date"));
+                                created.setText(jsonObject.getString("regdate"));
                                 status.setText(String.valueOf(jsonObject.getInt("status")));
                                 items.addView(tableRow);
                             }
